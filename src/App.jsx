@@ -17,8 +17,6 @@ function App() {
     <ChakraProvider>
       <Center h={[null, "100vh"]}>
         <Stack
-          // w={["100%", "416px"]}
-          // w="100%"
           spacing={16}
           p={["24px", "0px"]}
           direction={["column", "column", "column", "row"]}
@@ -26,7 +24,7 @@ function App() {
           <Box
             minW="400px"
             maxW="750px"
-            maxH="320px"
+            // maxH="320px"
             p={8}
             boxShadow="md"
             borderRadius="lg"
@@ -38,7 +36,7 @@ function App() {
               </Badge>
             </HStack>
             <Text color="gray">Average Daily Sales</Text>
-            <Box py={8}>
+            <Box py={8} mt={16}>
               <BarChart />
             </Box>
           </Box>
